@@ -1,0 +1,19 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "catkin_make",//可以选择shell或者process,如果是shell代码是在shell里面运行一个命令，如果是process代表作为一个进程来运行
+			"args": [
+				//"--directory",
+				//"/home/xuwenyu/learn_ros_ws",
+				"-DCMAKE_BUILD_TYPE=Debug" //catkin_make -DCMAKE_BUILD_TYPE=Debug
+				//-DCATKIN_WHITELIST_PACKAGES="package1;package2" ///使用后需catkin_make -DCATKIN_WHITELIST_PACKAGES=""才能编译所有功能包
+			],
+			"problemMatcher": [
+				"$catkin-gcc"
+			],
+			"group": "build",
+			"label": "catkin_make: build"
+		}
+	]
+}
