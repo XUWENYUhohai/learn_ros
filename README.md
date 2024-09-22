@@ -12,16 +12,24 @@ https://www.jb51.net/article/192889.htm
 first：
 
 echo "# learn_ros" >> README.md
+
 git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
+
+git add .
+
+git commit -m "Initial commit"
+
 git remote add origin https://github.com/XUWENYUhohai/learn_ros.git
+
+git branch -M main
+
 git push -u origin main
 
 
 goon:
 
-git remote add origin https://github.com/XUWENYUhohai/learn_ros.git
-git branch -M main
-git push -u origin main
+git add .
+
+git commit -m "Your commit message"
+
+git push
