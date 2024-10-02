@@ -26,10 +26,20 @@ git branch -M main
 git push -u origin main
 
 
-goon:
+
+
+after:
 
 git add .
 
-git commit -m "Your commit message"
+git commit -m "修改的信息"
 
 git push
+
+
+
+https://zhuanlan.zhihu.com/p/678233404
+
+vscode里的提交
+
+https://www.cnblogs.com/gamepen/p/17753831.html

@@ -9,7 +9,7 @@
             "preLaunchTask": "catkin_make: build", 
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/devel/lib/hello_ros/hello_node", //launch: ......launch
+            "program": "${workspaceFolder}/devel/lib/demo_msg0/talker", //launch: ......launch
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

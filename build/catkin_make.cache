@@ -1,2 +1,2 @@
-hello_ros
+demo_msg0:hello_ros
 -DCMAKE_BUILD_TYPE=Debug -DCATKIN_DEVEL_PREFIX=/home/xuwenyu/learn_ros_ws/devel -DCMAKE_INSTALL_PREFIX=/home/xuwenyu/learn_ros_ws/install -G Unix Makefiles
