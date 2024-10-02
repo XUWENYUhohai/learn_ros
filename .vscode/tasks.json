@@ -6,7 +6,7 @@
 			"args": [
 				//"--directory",
 				//"/home/xuwenyu/learn_ros_ws",
-				"-DCMAKE_BUILD_TYPE=Debug" //catkin_make -DCMAKE_BUILD_TYPE=Debug
+				// "-DCMAKE_BUILD_TYPE=Debug" //catkin_make -DCMAKE_BUILD_TYPE=Debug
 				//-DCATKIN_WHITELIST_PACKAGES="package1;package2" ///使用后需catkin_make -DCATKIN_WHITELIST_PACKAGES=""才能编译所有功能包
 			],
 			"problemMatcher": [

@@ -1,7 +1,7 @@
 # learn_ros
 1.roscore
 
-2.调试F5（需调整launch.json里的"program"，有参数添参数，.launch还未测试）
+2.调试F5（需调整launch.json里的"program"，有参数添参数，.launch已测试（需要使用 killall -9 roscore && killall -9 rosmaster 或者 外部使用roscore））
 
 配置：
 

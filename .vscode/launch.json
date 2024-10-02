@@ -5,30 +5,39 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "(gdb) 启动",
-            "preLaunchTask": "catkin_make: build", 
-            "type": "cppdbg",
+            "name": "ROS: Launch",
+            "type": "ros",
             "request": "launch",
-            "program": "${workspaceFolder}/devel/lib/demo_msg0/talker", //launch: ......launch
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "gdb",
-            "setupCommands": [
-                {
-                    "description": "为 gdb 启用整齐打印",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                },
-                {
-                    "description": "将反汇编风格设置为 Intel",
-                    "text": "-gdb-set disassembly-flavor intel",
-                    "ignoreFailures": true
-                }
-            ]
-        }
+            "target": "${workspaceFolder}/src/demo_msg0/msg.launch", //! 需要使用 killall -9 roscore && killall -9 rosmaster 或者 外部使用roscore
+            "preLaunchTask": "catkin_make: build",
+            // "launch": ["rviz", "gz"],
+        },
+
+        // {
+        //     "name": "(gdb) 启动",
+        //     "preLaunchTask": "catkin_make: build", 
+        //     "type": "cppdbg",
+        //     "request": "launch",
+        //     "program": "${workspaceFolder}/devel/lib/demo_msg0/talker", //launch: ......launch
+        //     "args": [],
+        //     "stopAtEntry": false,
+        //     "cwd": "${workspaceFolder}",
+        //     "environment": [],
+        //     "externalConsole": false,
+        //     "MIMode": "gdb",
+        //     "setupCommands": [
+        //         {
+        //             "description": "为 gdb 启用整齐打印",
+        //             "text": "-enable-pretty-printing",
+        //             "ignoreFailures": true
+        //         },
+        //         {
+        //             "description": "将反汇编风格设置为 Intel",
+        //             "text": "-gdb-set disassembly-flavor intel",
+        //             "ignoreFailures": true
+        //         }
+        //     ]
+        // }
 
     ]
 }

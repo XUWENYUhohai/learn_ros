@@ -1,0 +1,4 @@
+<launch>
+    <node pkg = "demo_msg0" type = "talker" name = "talker" output = "screen" />
+    <node pkg = "demo_msg0" type = "listener" name = "listener" output = "screen" />
+</launch>

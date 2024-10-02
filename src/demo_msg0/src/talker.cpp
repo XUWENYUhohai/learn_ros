@@ -36,7 +36,9 @@ int main(int argc, char *argv[])
         ss << msg_front << count;
         msg.data = ss.str();
 
-        pub.publish(msg);//发布消息
+        ros::Duration(1.0).sleep();//todo ros::Time、ros::Duration、定时器ros::Timer&ros::Rate  :https://www.cnblogs.com/zhjblogs/p/16559725.html
+
+        pub.publish(msg);//! 此时就发布消息
 
         // c_str() 函数可以将 const string* 类型 转化为 cons char* 类型, 就是将C++的string转化为C的字符串数组，c_str()生成一个const char *指针，指向字符串的首地址
         ROS_INFO("发送消息：%s", msg.data.c_str());
