@@ -7,7 +7,9 @@
       },
       "includePath": [
         "/opt/ros/melodic/include/**",
-        "/usr/include/**"
+        "/usr/include/**",
+        //"home/xxx/yyy工作空间/devel/include/" //配置 head 文件的路径 
+				"${workspaceFolder}/devel/include"//或者
       ],
       "name": "ROS",
       "intelliSenseMode": "gcc-x64",
