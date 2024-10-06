@@ -133,6 +133,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/xuwenyu/learn_ros_ws/build/gtest/cmake_install.cmake")
   include("/home/xuwenyu/learn_ros_ws/build/demo_msg0/cmake_install.cmake")
   include("/home/xuwenyu/learn_ros_ws/build/demo_msg1/cmake_install.cmake")
+  include("/home/xuwenyu/learn_ros_ws/build/demo_param/cmake_install.cmake")
   include("/home/xuwenyu/learn_ros_ws/build/demo_srv/cmake_install.cmake")
   include("/home/xuwenyu/learn_ros_ws/build/hello_ros/cmake_install.cmake")
 

@@ -688,6 +688,45 @@ listener_p/fast:
 .PHONY : listener_p/fast
 
 #=============================================================================
+# Target rules for targets named param_get
+
+# Build rule for target.
+param_get: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 param_get
+.PHONY : param_get
+
+# fast build rule for target.
+param_get/fast:
+	$(MAKE) -f demo_param/CMakeFiles/param_get.dir/build.make demo_param/CMakeFiles/param_get.dir/build
+.PHONY : param_get/fast
+
+#=============================================================================
+# Target rules for targets named param_set
+
+# Build rule for target.
+param_set: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 param_set
+.PHONY : param_set
+
+# fast build rule for target.
+param_set/fast:
+	$(MAKE) -f demo_param/CMakeFiles/param_set.dir/build.make demo_param/CMakeFiles/param_set.dir/build
+.PHONY : param_set/fast
+
+#=============================================================================
+# Target rules for targets named param_delete
+
+# Build rule for target.
+param_delete: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 param_delete
+.PHONY : param_delete
+
+# fast build rule for target.
+param_delete/fast:
+	$(MAKE) -f demo_param/CMakeFiles/param_delete.dir/build.make demo_param/CMakeFiles/param_delete.dir/build
+.PHONY : param_delete/fast
+
+#=============================================================================
 # Target rules for targets named demo_srv_geneus
 
 # Build rule for target.
@@ -935,6 +974,9 @@ help:
 	@echo "... demo_msg1_generate_messages_py"
 	@echo "... talker_p"
 	@echo "... listener_p"
+	@echo "... param_get"
+	@echo "... param_set"
+	@echo "... param_delete"
 	@echo "... demo_srv_geneus"
 	@echo "... demo_srv_generate_messages_eus"
 	@echo "... demo_srv_genlisp"

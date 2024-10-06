@@ -7,5 +7,6 @@
 subdirs("gtest")
 subdirs("demo_msg0")
 subdirs("demo_msg1")
+subdirs("demo_param")
 subdirs("demo_srv")
 subdirs("hello_ros")

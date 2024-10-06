@@ -80,6 +80,16 @@
 /home/xuwenyu/learn_ros_ws/build/demo_msg1/CMakeFiles/install.dir
 /home/xuwenyu/learn_ros_ws/build/demo_msg1/CMakeFiles/listener_p.dir
 /home/xuwenyu/learn_ros_ws/build/demo_msg1/CMakeFiles/edit_cache.dir
+/home/xuwenyu/learn_ros_ws/build/demo_param/CMakeFiles/install/strip.dir
+/home/xuwenyu/learn_ros_ws/build/demo_param/CMakeFiles/install.dir
+/home/xuwenyu/learn_ros_ws/build/demo_param/CMakeFiles/list_install_components.dir
+/home/xuwenyu/learn_ros_ws/build/demo_param/CMakeFiles/install/local.dir
+/home/xuwenyu/learn_ros_ws/build/demo_param/CMakeFiles/param_get.dir
+/home/xuwenyu/learn_ros_ws/build/demo_param/CMakeFiles/test.dir
+/home/xuwenyu/learn_ros_ws/build/demo_param/CMakeFiles/param_set.dir
+/home/xuwenyu/learn_ros_ws/build/demo_param/CMakeFiles/param_delete.dir
+/home/xuwenyu/learn_ros_ws/build/demo_param/CMakeFiles/edit_cache.dir
+/home/xuwenyu/learn_ros_ws/build/demo_param/CMakeFiles/rebuild_cache.dir
 /home/xuwenyu/learn_ros_ws/build/demo_srv/CMakeFiles/list_install_components.dir
 /home/xuwenyu/learn_ros_ws/build/demo_srv/CMakeFiles/rebuild_cache.dir
 /home/xuwenyu/learn_ros_ws/build/demo_srv/CMakeFiles/demo_srv_geneus.dir

@@ -306,6 +306,12 @@ demo_msg1_BINARY_DIR:STATIC=/home/xuwenyu/learn_ros_ws/build/demo_msg1
 demo_msg1_SOURCE_DIR:STATIC=/home/xuwenyu/learn_ros_ws/src/demo_msg1
 
 //Value Computed by CMake
+demo_param_BINARY_DIR:STATIC=/home/xuwenyu/learn_ros_ws/build/demo_param
+
+//Value Computed by CMake
+demo_param_SOURCE_DIR:STATIC=/home/xuwenyu/learn_ros_ws/src/demo_param
+
+//Value Computed by CMake
 demo_srv_BINARY_DIR:STATIC=/home/xuwenyu/learn_ros_ws/build/demo_srv
 
 //Value Computed by CMake
@@ -532,7 +538,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=9
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
