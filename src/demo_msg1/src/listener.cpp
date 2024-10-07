@@ -13,6 +13,10 @@ int main(int argc, char *argv[])
     ros::NodeHandle nh;
     
     ros::Subscriber sub = nh.subscribe("chatter", 10, callback);
+    if (sub)
+    {
+        
+    }
     ros::spin();
     return 0;
 }

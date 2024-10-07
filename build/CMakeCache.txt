@@ -317,6 +317,18 @@ demo_srv_BINARY_DIR:STATIC=/home/xuwenyu/learn_ros_ws/build/demo_srv
 //Value Computed by CMake
 demo_srv_SOURCE_DIR:STATIC=/home/xuwenyu/learn_ros_ws/src/demo_srv
 
+//Value Computed by CMake
+demo_time_BINARY_DIR:STATIC=/home/xuwenyu/learn_ros_ws/build/demo_time
+
+//Value Computed by CMake
+demo_time_SOURCE_DIR:STATIC=/home/xuwenyu/learn_ros_ws/src/demo_time
+
+//Value Computed by CMake
+demo_turtle_BINARY_DIR:STATIC=/home/xuwenyu/learn_ros_ws/build/demo_turtle
+
+//Value Computed by CMake
+demo_turtle_SOURCE_DIR:STATIC=/home/xuwenyu/learn_ros_ws/src/demo_turtle
+
 //The directory containing a CMake configuration file for gencpp.
 gencpp_DIR:PATH=/opt/ros/melodic/share/gencpp/cmake
 
@@ -334,6 +346,9 @@ gennodejs_DIR:PATH=/opt/ros/melodic/share/gennodejs/cmake
 
 //The directory containing a CMake configuration file for genpy.
 genpy_DIR:PATH=/opt/ros/melodic/share/genpy/cmake
+
+//The directory containing a CMake configuration file for geometry_msgs.
+geometry_msgs_DIR:PATH=/opt/ros/melodic/share/geometry_msgs/cmake
 
 //Value Computed by CMake
 gmock_BINARY_DIR:STATIC=/home/xuwenyu/learn_ros_ws/build/gtest/googlemock
@@ -538,7 +553,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=9
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=11
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

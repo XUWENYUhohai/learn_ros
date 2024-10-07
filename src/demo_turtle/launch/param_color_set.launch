@@ -1,0 +1,11 @@
+<launch>
+    <node pkg = "turtlesim" type = "turtlesim_node" name = "set_bg_color" output = "screen" >
+        <!-- 传参策略 1 -->
+        <!-- <param name = "background_b" value = "0" type = "int" />
+        <param name = "background_g" value = "0" type = "int" />
+        <param name = "background_r" value = "0" type = "int" /> -->
+
+        <!-- 传参策略 2 -->
+        <rosparam command = "load" file = "$(find demo_turtle)/config/color.yaml" />
+    </node>
+</launch>

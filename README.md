@@ -44,13 +44,23 @@ vscode里的提交
 
 https://www.cnblogs.com/gamepen/p/17753831.html
 
+
 ctrl + backspace 删除左边字符
+
 ctrl + k + c 注释
+
 ctrl + k + u 取消注释
-ctrl + shift + ~ 打开终端（ctrl + shift + c 系统终端）
+
+ctrl + shift + ~ 打开终端（ctrl + alt + c 系统终端）
+
 ctrl + shift + p 设置
+
 ctrl + shift + k 删除行
+
 alt + up/down 移动行
+
 ctrl + f 查找
+
 ctrl + h 替换
+
 ctrl + shift + up/down 选中多行

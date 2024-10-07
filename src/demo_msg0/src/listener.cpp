@@ -15,7 +15,11 @@ int main(int argc, char *argv[])
     ros::NodeHandle nh;
 
     ros::Subscriber sub = nh.subscribe<std_msgs::String>("chatter", 10, Msg_callback);
-
+    if (sub)
+    {
+        
+    }
+    
     ros::spin();
     return 0;
 }
