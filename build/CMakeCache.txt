@@ -294,6 +294,12 @@ catkin_DIR:PATH=/opt/ros/melodic/share/catkin/cmake
 cpp_common_DIR:PATH=/opt/ros/melodic/share/cpp_common/cmake
 
 //Value Computed by CMake
+demo_head_source_BINARY_DIR:STATIC=/home/xuwenyu/learn_ros_ws/build/demo_head_source
+
+//Value Computed by CMake
+demo_head_source_SOURCE_DIR:STATIC=/home/xuwenyu/learn_ros_ws/src/demo_head_source
+
+//Value Computed by CMake
 demo_msg0_BINARY_DIR:STATIC=/home/xuwenyu/learn_ros_ws/build/demo_msg0
 
 //Value Computed by CMake
@@ -407,6 +413,9 @@ hello_ros_SOURCE_DIR:STATIC=/home/xuwenyu/learn_ros_ws/src/hello_ros
 
 //Path to a library.
 lib:FILEPATH=/opt/ros/melodic/lib/libxmlrpcpp.so
+
+//Dependencies for target
+libhaha_LIB_DEPENDS:STATIC=
 
 //The directory containing a CMake configuration file for message_generation.
 message_generation_DIR:PATH=/opt/ros/melodic/share/message_generation/cmake
@@ -553,7 +562,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=11
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=12
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

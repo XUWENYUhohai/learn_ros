@@ -35,7 +35,7 @@ int main(int argc, char  *argv[])
     ROS_INFO("当前时刻:%d", right_time.sec);//sec不是函数是字段,返回的是整型%d,获取距离 1970年01月01日 00:00:00 的秒数
 
     ros::Time sometime = ros::Time(100, 1000000000);// 参数1:秒数  参数2:纳秒
-    ROS_INFO("时刻:%.2f",sometime.toSec()); //100.10
+    ROS_INFO("时刻:%.2f",sometime.toSec()); //101.00
     ros::Time sometime2(100.3);//直接传入 double 类型的秒数
     ROS_INFO("时刻:%.2f",sometime2.toSec()); //100.30
 

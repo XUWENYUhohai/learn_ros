@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -g  -shared -Wl,-soname,liblibhaha.so -o /home/xuwenyu/learn_ros_ws/devel/lib/liblibhaha.so CMakeFiles/libhaha.dir/src/libhaha.cpp.o 

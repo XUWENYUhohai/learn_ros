@@ -5,6 +5,7 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
+subdirs("demo_head_source")
 subdirs("demo_msg0")
 subdirs("demo_msg1")
 subdirs("demo_param")
