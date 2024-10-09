@@ -1,0 +1,18 @@
+<launch>
+    <!-- 设置多个参数,这些参数使用同一值 -->
+    <!-- 1 -->
+    <param name = "A" value = "11" />
+    <param name = "B" value = "11" />
+    <param name = "C" value = "11" />
+
+     <!-- 2 -->
+    <arg name = "car_length" default = "11" />
+    <param name = "A" value = "$(arg car_length)" />
+    <param name = "B" value = "$(arg car_length)" />
+    <param name = "C" value = "$(arg car_length)" />
+
+    <!-- node pkg=“包名” type=“可执行文件名” name=“节点名” args=“$(arg arg-name（例如上面的car_length）)” /> -->
+    <!-- 或者 -->
+    <!-- <node pkg=“包名” type=“可执行文件名” name=“节点名” args=“xxx（对应节点中的argv[1]）,程序中有xxx=’”argv[1]” /> -->
+    <!-- 命令行调用launch传参：roslaunch arg.launch xxx:=值 -->
+</launch>

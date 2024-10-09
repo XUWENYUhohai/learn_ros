@@ -1,0 +1,15 @@
+<launch>
+<!-- 键盘控制:rosrun teleop_twist_keyboard teleop_twist_keyboard.py 安装:sudo apt-get install ros-melodic-teleop-twist-keyboard
+这里remap改的是订阅的话题 -->
+    <node pkg = "turtlesim" type = "turtlesim_node" name = "my_turtle" output = "screen" >
+    <remap from = "turtle1/cmd_vel" to = "cmd_vel" />
+    </node>
+</launch>
+
+<!-- 用于话题重命名 -->
+<!-- 1.属性 -->
+<!-- from="xxx" -->
+<!-- 原始话题名称 -->
+<!--  -->
+<!-- to="yyy" -->
+<!-- 目标名称 -->

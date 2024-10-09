@@ -1,0 +1,19 @@
+<launch>
+    <group ns = "first">
+        <node pkg = "turtlesim" type = "turtlesim_node" name = "my_turtle" output = "screen" />
+        <node pkg = "turtlesim" type = "turtlesim_teleop_key" name = "my_key" output = "screen" />
+    </group>
+
+    <group ns = "second">
+        <node pkg = "turtlesim" type = "turtlesim_node" name = "my_turtle" output = "screen" />
+        <node pkg = "turtlesim" type = "turtlesim_teleop_key" name = "my_key" output = "screen" />
+    </group>
+
+</launch>
+
+<!-- <group>标签可以对节点分组，具有 ns 属性，可以让节点归属某个命名空间
+1.属性
+ns="名称空间" (可选)
+
+clear_params="true | false" (可选)
+启动前，是否删除组名称空间的所有参数(慎用....此功能危险) -->
