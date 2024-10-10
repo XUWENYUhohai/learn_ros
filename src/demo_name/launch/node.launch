@@ -1,0 +1,6 @@
+<launch>
+    <node pkg = "turtlesim" type = "turtlesim_node" name = "t1" />
+    <node pkg = "turtlesim" type = "turtlesim_node" name = "t2" />
+    <node pkg = "turtlesim" type = "turtlesim_node" name = "t2" ns = "hello" />
+    <!-- 在 node 标签中，name 属性是必须的，ns 可选。 -->
+</launch>

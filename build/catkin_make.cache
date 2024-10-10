@@ -1,2 +1,2 @@
-demo_head_source:demo_msg0:demo_msg1:demo_param:demo_srv:demo_time:demo_turtle:hello_ros
+demo_head_source:demo_launch:demo_msg0:demo_msg1:demo_name:demo_param:demo_srv:demo_time:demo_turtle:hello_ros
 -DCATKIN_DEVEL_PREFIX=/home/xuwenyu/learn_ros_ws/devel -DCMAKE_INSTALL_PREFIX=/home/xuwenyu/learn_ros_ws/install -G Unix Makefiles

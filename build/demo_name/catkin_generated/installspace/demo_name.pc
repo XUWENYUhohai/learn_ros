@@ -1,0 +1,8 @@
+prefix=/home/xuwenyu/learn_ros_ws/install
+
+Name: demo_name
+Description: Description of demo_name
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

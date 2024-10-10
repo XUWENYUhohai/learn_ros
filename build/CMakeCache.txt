@@ -300,6 +300,12 @@ demo_head_source_BINARY_DIR:STATIC=/home/xuwenyu/learn_ros_ws/build/demo_head_so
 demo_head_source_SOURCE_DIR:STATIC=/home/xuwenyu/learn_ros_ws/src/demo_head_source
 
 //Value Computed by CMake
+demo_launch_BINARY_DIR:STATIC=/home/xuwenyu/learn_ros_ws/build/demo_launch
+
+//Value Computed by CMake
+demo_launch_SOURCE_DIR:STATIC=/home/xuwenyu/learn_ros_ws/src/demo_launch
+
+//Value Computed by CMake
 demo_msg0_BINARY_DIR:STATIC=/home/xuwenyu/learn_ros_ws/build/demo_msg0
 
 //Value Computed by CMake
@@ -310,6 +316,12 @@ demo_msg1_BINARY_DIR:STATIC=/home/xuwenyu/learn_ros_ws/build/demo_msg1
 
 //Value Computed by CMake
 demo_msg1_SOURCE_DIR:STATIC=/home/xuwenyu/learn_ros_ws/src/demo_msg1
+
+//Value Computed by CMake
+demo_name_BINARY_DIR:STATIC=/home/xuwenyu/learn_ros_ws/build/demo_name
+
+//Value Computed by CMake
+demo_name_SOURCE_DIR:STATIC=/home/xuwenyu/learn_ros_ws/src/demo_name
 
 //Value Computed by CMake
 demo_param_BINARY_DIR:STATIC=/home/xuwenyu/learn_ros_ws/build/demo_param
@@ -447,6 +459,12 @@ rostime_DIR:PATH=/opt/ros/melodic/share/rostime/cmake
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/melodic/share/std_msgs/cmake
 
+//The directory containing a CMake configuration file for std_srvs.
+std_srvs_DIR:PATH=/opt/ros/melodic/share/std_srvs/cmake
+
+//The directory containing a CMake configuration file for turtlesim.
+turtlesim_DIR:PATH=/opt/ros/melodic/share/turtlesim/cmake
+
 //The directory containing a CMake configuration file for xmlrpcpp.
 xmlrpcpp_DIR:PATH=/opt/ros/melodic/share/xmlrpcpp/cmake
 
@@ -562,7 +580,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=12
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=14
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
