@@ -25,7 +25,7 @@ int main(int argc, char  *argv[])
 {
     setlocale(LC_ALL, "");
     ros::init(argc, argv, "ros_time");
-    ros::NodeHandle nh;//必须创建句柄，否则时间没有初始化，导致后续API调用失败
+    ros::NodeHandle nh;//必须创建句柄，否则时间没有初始化，导致后续API调用失败//! 使用ros::time需要
 
     //1.时刻
     //获取时刻，或是设置指定时刻:
