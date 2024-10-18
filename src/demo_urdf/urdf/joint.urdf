@@ -1,0 +1,97 @@
+<!-- 1.属性
+name -> 为关节命名
+
+type -> 关节运动形式
+continuous: 旋转关节，可以绕单轴无限旋转
+revolute: 旋转关节，类似于 continues,但是有旋转角度限制
+prismatic: 滑动关节，沿某一轴线移动的关节，有位置极限
+planer: 平面关节，允许在平面正交方向上平移或旋转
+floating: 浮动关节，允许进行平移、旋转运动
+fixed: 固定关节，不允许运动的特殊关节
+
+2.子标签
+parent(必需的)
+parent link的名字是一个强制的属性：
+link:父级连杆的名字，是这个link在机器人结构树中的名字。
+
+child(必需的)
+child link的名字是一个强制的属性：
+link:子级连杆的名字，是这个link在机器人结构树中的名字。
+
+origin
+属性: xyz=各轴线上的偏移量 rpy=各轴线上的偏移弧度。
+
+axis
+属性: xyz用于设置围绕哪个关节轴运动。 
+
+calibration: 关节的参考位置，用来校准关节的绝对位置
+
+dynamic：描述关节的物理属性，如阻尼值、物理静摩擦力等，在动力学仿真在用到
+
+limit：描述运动的一些极限值，包括关节运动的上下限位置、速度限制、力矩限制等
+
+mimic：描述改关节与已有关节的关系
+
+safety_controller：描述安全控制器参数
+-->
+
+<!-- 
+    需求: 创建机器人模型，底盘为长方体，
+         在长方体的前面添加一摄像头，
+         摄像头可以沿着 Z 轴 360 度旋转
+
+ -->
+ <!--使用 base_footprint 优化-->
+ <robot name = "mycar">
+    <!-- 设置一个原点(机器人中心点的投影) -->
+    <link name="base_footprint" >
+        <visual>
+            <geometry>
+                <sphere radius="0.001" />
+            </geometry>
+        </visual>
+    </link>
+
+    <!-- 添加底盘 -->
+     <link name="base_link">
+        <visual>
+            <geometry>
+                <box size="0.5 0.2 0.1" />
+            </geometry>
+            <origin xwy="0 0 0" rpy="0 0 0"/>
+            <material name="blue">
+                <color rgba="0 0 1.0 0.5" />
+            </material>
+        </visual>
+    </link>
+
+
+    <!-- 底盘与原点连接的关节 -->
+    <joint name="base_link2base_footprint" type="fixed">
+        <parent link="base_footprint" />
+        <child link="base_link" />
+        <origin xyz="0 0 0.05" />
+    </joint>
+    
+    <!-- 添加摄像头 -->
+    <link name="camera">
+        <visual>
+            <geometry>
+                <box size="0.02 0.05 0.05" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <material name="red">
+                <color rgba="1 0 0 0.5" />
+            </material>
+        </visual>
+    </link>
+
+    <!-- 关节 -->
+    <joint name="camera2baselink" type="continuous">
+        <parent link="base_link" />
+        <child link="camera" />
+        <!-- 需要计算两个 link 的物理中心之间的偏移量 -->
+        <origin xyz="0.2 0 0.075" rpy="0 0 0" />
+        <axis xyz="0 0 1" />
+    </joint>
+ </robot>

@@ -21,4 +21,6 @@ type="str | int | double | bool | yaml" (可选)
 指定参数类型，如果未指定，roslaunch 会尝试确定参数类型，规则如下:
 如果包含 '.' 的数字解析未浮点型，否则为整型
 "true" 和 "false" 是 bool 值(不区分大小写)
-其他是字符串 -->
+其他是字符串
+
+! <param> tag must have one and only one of value/textfile/binfile/command -->

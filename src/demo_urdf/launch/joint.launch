@@ -1,0 +1,14 @@
+<launch>
+    <param name = "robot_description" textfile = "$(find demo_urdf)/urdf/joint.urdf" />
+    <node pkg = "rviz" type = "rviz" name = "rviz" args = "$(find demo_urdf)/config/joint.rviz" />
+    <!-- <node pkg = "rviz" type = "rviz" name = "rviz"  /> -->
+
+    <!-- 添加关节状态发布节点 （发布每个joint（除fixed类型）的状态，而且可以通过ui对joint进行控制）-->
+    <node pkg = "joint_state_publisher" type = "joint_state_publisher" name = "joint_state_publisher" />
+
+    <!-- 添加机器人状态发布节点 （将机器人各个links、joints之间的关系通过tf的形式，整理成三维位姿信息发布）-->
+    <node pkg = "robot_state_publisher" type = "robot_state_publisher" name = "robot_state_publisher" />
+
+    <!-- 可选:用于控制关节运动的节点 -->
+    <node pkg = "joint_state_publisher_gui" type = "joint_state_publisher_gui" name = "joint_state_publisher_gui" />
+</launch>

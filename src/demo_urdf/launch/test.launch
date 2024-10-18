@@ -1,0 +1,7 @@
+<launch>
+    <param name = "robot_description" textfile = "$(find demo_urdf)/urdf/test.urdf" />
+    <!--! file不行：<param> tag must have one and only one of value/textfile/binfile -->
+    <!-- <param name = "robot_description" file = "$(find demo_urdf)/urdf/test.urdf" /> -->
+
+    <node pkg = "rviz" type = "rviz" name = "rviz" args = "-d $(find demo_urdf)/config/test.rviz" />
+</launch>
