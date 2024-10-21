@@ -1,6 +1,6 @@
 <launch>
     <param name = "robot_description" textfile = "$(find demo_urdf)/urdf/joint.urdf" />
-    <node pkg = "rviz" type = "rviz" name = "rviz" args = "$(find demo_urdf)/config/joint.rviz" />
+    <node pkg = "rviz" type = "rviz" name = "rviz" args = "-d $(find demo_urdf)/config/joint.rviz" />
     <!-- <node pkg = "rviz" type = "rviz" name = "rviz"  /> -->
 
     <!-- 添加关节状态发布节点 （发布每个joint（除fixed类型）的状态，而且可以通过ui对joint进行控制）-->

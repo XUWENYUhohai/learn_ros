@@ -1,0 +1,40 @@
+<launch>
+    <!-- 设置地图的配置文件 -->
+    <!-- <include file="$(demo_nav)/launch/server_map.launch" /> -->
+    <arg name="map" default="test.yaml" />
+    <!-- 运行地图服务器，并且加载设置的地图-->
+    <node pkg="map_server" type="map_server" name="map_server" args="$(find demo_nav)/map/$(arg map)" />
+
+    <!-- 启动AMCL节点 -->
+    <include file="$(find demo_nav)/launch/amcl_diff.launch" />
+
+    <!-- 运行rviz -->
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find demo_nav)/rviz/amcl.rviz" />
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+</launch>
+<!-- 其中$(find demo_nav)/map/map"是指地图的保存路径以及保存的文件名称。
+SLAM建图完毕后，执行该launch文件即可。
+
+xxx.pgm 本质是一张图片，直接使用图片查看程序即可打开。
+xxx.yaml 保存的是地图的元数据信息，用于描述图片，内容格式如下:
+image: /home/rosmelodic/ws02_nav/src/mycar_nav/map/nav.pgm
+resolution: 0.050000
+origin: [-50.000000, -50.000000, 0.000000]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196
+解释:
+image:被描述的图片资源路径，可以是绝对路径也可以是相对路径。
+resolution: 图片分片率(单位: m/像素)。
+origin: 地图中右下像素的二维姿势，为（x，y，偏航），偏航为逆时针旋转（偏航= 0表示无旋转）。（相对于rviz中原点的位姿）
+occupied_thresh: 占用概率大于此阈值的像素被视为完全占用。
+free_thresh: 占用率小于此阈值的像素被视为完全空闲。
+negate: 是否应该颠倒白色/黑色自由/占用的语义。
+
+map_server 中障碍物计算规则:
+地图中的每一个像素取值在 [0,255] 之间，白色为 255，黑色为 0，该值设为 x；
+map_server 会将像素值作为判断是否是障碍物的依据，首先计算比例: p = (255 - x) / 255.0，白色为0，黑色为1(negate为true，则p = x / 255.0)；
+根据步骤2计算的比例判断是否是障碍物，如果 p > occupied_thresh 那么视为障碍物，如果 p < free_thresh 那么视为无物。
+备注:图片也可以根据需求编辑。
+	 白色：可通行区域；黑色：障碍物；蓝灰：未知区域 -->

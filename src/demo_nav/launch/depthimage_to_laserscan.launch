@@ -1,0 +1,7 @@
+<launch>
+    <node pkg="depthimage_to_laserscan" type="depthimage_to_laserscan" name="depthimage_to_laserscan">
+        <remap from="image" to="/camera/depth/image_raw" />
+        <!-- value值好像无所谓是camera还是support，注释掉都能用 -->
+        <param name="output_frame_id" value="camera" />
+    </node>
+</launch>

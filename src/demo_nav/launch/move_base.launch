@@ -1,0 +1,14 @@
+<launch>
+<!-- respawn 为 false，意味着该节点关闭后，不会被重启；clear_params 为 true，意味着每次启动该节点都要清空私有参数然后重新载入 -->
+    <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen" clear_params="true" >
+        <rosparam file="$(find demo_nav)/param/costmap_common_params.yaml" command="load" ns="global_costmap" />
+        <rosparam file="$(find demo_nav)/param/costmap_common_params.yaml" command="load" ns="local_costmap" />
+        <rosparam file="$(find demo_nav)/param/local_costmap_params.yaml" command="load" />
+        <rosparam file="$(find demo_nav)/param/global_costmap_params.yaml" command="load" />
+        <rosparam file="$(find demo_nav)/param/base_local_params.yaml" command="load" />
+    </node>
+</launch>
+<!-- 关于配置文件的编写，可以参考一些成熟的机器人的路径规划实现，比如: turtlebot3，
+github链接：https://github.com/ROBOTIS-GIT/turtlebot3/tree/master/turtlebot3_navigation/param，先下载这些配置文件备用。
+在功能包下新建 param 目录，复制下载的文件到此目录: costmap_common_params_burger.yaml、local_costmap_params.yaml、global_costmap_params.yaml、base_local_planner_params.yaml，
+并将costmap_common_params_burger.yaml 重命名为:costmap_common_params.yaml。 -->
