@@ -483,21 +483,6 @@ dynamic_reconfigure_generate_messages_cpp/fast:
 .PHONY : dynamic_reconfigure_generate_messages_cpp/fast
 
 # Convenience name for target.
-demo_nav/CMakeFiles/_catkin_empty_exported_target.dir/rule:
-	cd /home/xuwenyu/learn_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 demo_nav/CMakeFiles/_catkin_empty_exported_target.dir/rule
-.PHONY : demo_nav/CMakeFiles/_catkin_empty_exported_target.dir/rule
-
-# Convenience name for target.
-_catkin_empty_exported_target: demo_nav/CMakeFiles/_catkin_empty_exported_target.dir/rule
-
-.PHONY : _catkin_empty_exported_target
-
-# fast build rule for target.
-_catkin_empty_exported_target/fast:
-	cd /home/xuwenyu/learn_ros_ws/build && $(MAKE) -f demo_nav/CMakeFiles/_catkin_empty_exported_target.dir/build.make demo_nav/CMakeFiles/_catkin_empty_exported_target.dir/build
-.PHONY : _catkin_empty_exported_target/fast
-
-# Convenience name for target.
 demo_nav/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule:
 	cd /home/xuwenyu/learn_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 demo_nav/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
 .PHONY : demo_nav/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
@@ -635,7 +620,6 @@ help:
 	@echo "... move_base_msgs_generate_messages_py"
 	@echo "... diagnostic_msgs_generate_messages_lisp"
 	@echo "... dynamic_reconfigure_generate_messages_cpp"
-	@echo "... _catkin_empty_exported_target"
 	@echo "... dynamic_reconfigure_generate_messages_nodejs"
 	@echo "... dynamic_reconfigure_gencfg"
 	@echo "... edit_cache"

@@ -1,0 +1,19 @@
+(cl:defpackage demo_action-msg
+  (:use )
+  (:export
+   "<ADDACTION>"
+   "ADDACTION"
+   "<ADDACTIONFEEDBACK>"
+   "ADDACTIONFEEDBACK"
+   "<ADDACTIONGOAL>"
+   "ADDACTIONGOAL"
+   "<ADDACTIONRESULT>"
+   "ADDACTIONRESULT"
+   "<ADDFEEDBACK>"
+   "ADDFEEDBACK"
+   "<ADDGOAL>"
+   "ADDGOAL"
+   "<ADDRESULT>"
+   "ADDRESULT"
+  ))
+

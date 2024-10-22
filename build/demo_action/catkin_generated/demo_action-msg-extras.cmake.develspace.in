@@ -1,0 +1,2 @@
+set(demo_action_MESSAGE_FILES "/home/xuwenyu/learn_ros_ws/devel/share/demo_action/msg/addAction.msg;/home/xuwenyu/learn_ros_ws/devel/share/demo_action/msg/addActionGoal.msg;/home/xuwenyu/learn_ros_ws/devel/share/demo_action/msg/addActionResult.msg;/home/xuwenyu/learn_ros_ws/devel/share/demo_action/msg/addActionFeedback.msg;/home/xuwenyu/learn_ros_ws/devel/share/demo_action/msg/addGoal.msg;/home/xuwenyu/learn_ros_ws/devel/share/demo_action/msg/addResult.msg;/home/xuwenyu/learn_ros_ws/devel/share/demo_action/msg/addFeedback.msg")
+set(demo_action_SERVICE_FILES "")
