@@ -135,8 +135,8 @@ add_library(libhaha
 ## as an example, code may need to be generated before libraries
 ## either from message generation or dynamic reconfigure
 # //todo source 3
-add_dependencies(libhaha ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-# //todo source 4(可选)
+# add_dependencies(libhaha ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+# //todo source 4(可选 应该是子文件需要，实际可参考14讲ch13的src的cmakelist文件)
 # target_link_libraries(libhaha
 #   ${catkin_LIBRARIES}
 # )
@@ -157,7 +157,7 @@ add_executable(test_source src/test_source.cpp)
 ## Add cmake target dependencies of the executable
 ## same as for the library above
 # //todo source 6
-add_dependencies(test_source ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+# add_dependencies(test_source ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
 # //todo source 7
@@ -171,7 +171,7 @@ target_link_libraries(test_source
 # //todo head 2,3,4
 add_executable(test_head src/test_head.cpp)
 
-add_dependencies(test_head ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+# add_dependencies(test_head ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 target_link_libraries(test_head
   ${catkin_LIBRARIES}
