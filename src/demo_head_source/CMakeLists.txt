@@ -136,7 +136,7 @@ add_library(libhaha
 ## either from message generation or dynamic reconfigure
 # //todo source 3
 # add_dependencies(libhaha ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-# //todo source 4(可选 应该是子文件需要，实际可参考14讲ch13的src的cmakelist文件)
+# //todo source 4(可选 应该是子文件的cmakelist需要，实际可参考14讲ch13的src的cmakelist文件)
 # target_link_libraries(libhaha
 #   ${catkin_LIBRARIES}
 # )
