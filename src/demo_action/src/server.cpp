@@ -60,7 +60,10 @@ int main(int argc, char *argv[])
     bool auto_start)是否自动启动，false时需要调用server.start()启动
     */
     // actionlib::SimpleActionServer<demo_action::addAction> server(上面的);
-    Server server(nh,"add",boost::bind(&cb,_1,&server),false);//https://www.cnblogs.com/cenima/p/17894353.html
+    Server server(nh,"add",boost::bind(&cb,_1,&server),false);//https://www.cnblogs.com/cenima/p/17894353.html   https://blog.csdn.net/wjydym/article/details/92214349
+    // 不向 fun 绑定任何参数
+    // boost::bind(&fun, _1, _2)   // _1 _2 都是占位符. 上边已经说过了.
+    // 所以它就是 将新函数对象在调用时的实参表的第1个参数和第2个参数 绑定到fun函数.  
     server.start();
     // 5.处理请求,产生反馈与响应;
     // 6.spin().   
