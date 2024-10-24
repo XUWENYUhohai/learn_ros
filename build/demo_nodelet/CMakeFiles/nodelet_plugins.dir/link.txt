@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libnodelet_plugins.so -o /home/xuwenyu/learn_ros_ws/devel/lib/libnodelet_plugins.so CMakeFiles/nodelet_plugins.dir/src/nodelet_plugins.cpp.o 
