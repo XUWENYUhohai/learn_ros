@@ -117,3 +117,7 @@ export ROS_HOSTNAME=从机IP
 2.主机启动订阅节点，从机启动发布节点，测试通信是否正常
 
 3.反向测试，主机启动发布节点，从机启动订阅节点，测试通信是否正常
+
+命名空间识别问题（主要在demo_pluginlib中出现）
+
+https://blog.csdn.net/li_dabo/article/details/141040177

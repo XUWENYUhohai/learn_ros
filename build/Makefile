@@ -766,6 +766,32 @@ param_delete/fast:
 .PHONY : param_delete/fast
 
 #=============================================================================
+# Target rules for targets named polygon_loader
+
+# Build rule for target.
+polygon_loader: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 polygon_loader
+.PHONY : polygon_loader
+
+# fast build rule for target.
+polygon_loader/fast:
+	$(MAKE) -f demo_pluginlib/CMakeFiles/polygon_loader.dir/build.make demo_pluginlib/CMakeFiles/polygon_loader.dir/build
+.PHONY : polygon_loader/fast
+
+#=============================================================================
+# Target rules for targets named polygon_plugins
+
+# Build rule for target.
+polygon_plugins: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 polygon_plugins
+.PHONY : polygon_plugins
+
+# fast build rule for target.
+polygon_plugins/fast:
+	$(MAKE) -f demo_pluginlib/CMakeFiles/polygon_plugins.dir/build.make demo_pluginlib/CMakeFiles/polygon_plugins.dir/build
+.PHONY : polygon_plugins/fast
+
+#=============================================================================
 # Target rules for targets named demo_srv_geneus
 
 # Build rule for target.
@@ -2956,6 +2982,8 @@ help:
 	@echo "... param_get"
 	@echo "... param_set"
 	@echo "... param_delete"
+	@echo "... polygon_loader"
+	@echo "... polygon_plugins"
 	@echo "... demo_srv_geneus"
 	@echo "... demo_srv_generate_messages_eus"
 	@echo "... demo_srv_genlisp"

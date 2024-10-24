@@ -100,6 +100,15 @@
 /home/xuwenyu/learn_ros_ws/build/demo_param/CMakeFiles/param_delete.dir
 /home/xuwenyu/learn_ros_ws/build/demo_param/CMakeFiles/edit_cache.dir
 /home/xuwenyu/learn_ros_ws/build/demo_param/CMakeFiles/rebuild_cache.dir
+/home/xuwenyu/learn_ros_ws/build/demo_pluginlib/CMakeFiles/install/strip.dir
+/home/xuwenyu/learn_ros_ws/build/demo_pluginlib/CMakeFiles/install.dir
+/home/xuwenyu/learn_ros_ws/build/demo_pluginlib/CMakeFiles/polygon_loader.dir
+/home/xuwenyu/learn_ros_ws/build/demo_pluginlib/CMakeFiles/install/local.dir
+/home/xuwenyu/learn_ros_ws/build/demo_pluginlib/CMakeFiles/test.dir
+/home/xuwenyu/learn_ros_ws/build/demo_pluginlib/CMakeFiles/list_install_components.dir
+/home/xuwenyu/learn_ros_ws/build/demo_pluginlib/CMakeFiles/polygon_plugins.dir
+/home/xuwenyu/learn_ros_ws/build/demo_pluginlib/CMakeFiles/edit_cache.dir
+/home/xuwenyu/learn_ros_ws/build/demo_pluginlib/CMakeFiles/rebuild_cache.dir
 /home/xuwenyu/learn_ros_ws/build/demo_srv/CMakeFiles/list_install_components.dir
 /home/xuwenyu/learn_ros_ws/build/demo_srv/CMakeFiles/rebuild_cache.dir
 /home/xuwenyu/learn_ros_ws/build/demo_srv/CMakeFiles/demo_srv_geneus.dir

@@ -6,24 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/xuwenyu/learn_ros_ws/devel/include/demo_reconfigure/drConfig.h
-dynamic_reconfigure/config_tools.h
--
-limits
--
-ros/node_handle.h
--
-dynamic_reconfigure/ConfigDescription.h
--
-dynamic_reconfigure/ParamDescription.h
--
-dynamic_reconfigure/Group.h
--
-dynamic_reconfigure/config_init_mutex.h
--
-boost/any.hpp
--
-
 /home/xuwenyu/learn_ros_ws/src/demo_reconfigure/src/dr_server.cpp
 ros/ros.h
 -
@@ -238,22 +220,6 @@ ros/serialization.h
 ros/builtin_message_traits.h
 -
 ros/message_operations.h
--
-
-/opt/ros/melodic/include/dynamic_reconfigure/config_init_mutex.h
-boost/thread/mutex.hpp
--
-ros/macros.h
--
-
-/opt/ros/melodic/include/dynamic_reconfigure/config_tools.h
-string
--
-vector
--
-dynamic_reconfigure/Config.h
--
-dynamic_reconfigure/Group.h
 -
 
 /opt/ros/melodic/include/dynamic_reconfigure/server.h

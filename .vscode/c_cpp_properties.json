@@ -9,8 +9,10 @@
         "/opt/ros/melodic/include/**",
         "/usr/include/**",
         //"/home/xxx/yyy工作空间/devel/include/" //配置 head 文件的路径 
-				"${workspaceFolder}/devel/include",//或者
-        "/home/xuwenyu/learn_ros_ws/src/demo_head_source/include/**"
+				"${workspaceFolder}/devel/include/**",//或者
+        "/home/xuwenyu/learn_ros_ws/src/demo_head_source/include/**",
+        "/home/xuwenyu/learn_ros_ws/src/demo_pluginlib/include/**"
+        // "/home/xuwenyu/learn_ros_ws/devel/include/**"
       ],
       "name": "ROS",
       "intelliSenseMode": "gcc-x64",
